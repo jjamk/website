@@ -27,7 +27,7 @@ html,body{overflow:hidden;height:100%;}
 /*layout*/
 #wrap{width:100%; height:100%; padding-right:180px;}
 #wrap > h1{font-size:0;}
-header .logo_box{position:absolute; right:35px; top:75px; cursor: pointer;}
+header .logo_box{position:absolute; right:35px; top:75px;}
 header .logo_box img{width:100px;}
 #wrap header{width:180px; height:100%; position:fixed; right:0px; top:0px; background:url(../images/menu_bg1.png) repeat-y; z-index:11;}
 #wrap header nav{width:100%; height:100%;} 
@@ -47,12 +47,7 @@ footer > a.twit:hover{background:url(../images/social_b_twitter_hover.png) no-re
 footer > a.instar{background:url(../images/social_b_instar.png) no-repeat; right:80px;} 
 footer > a.instar:hover{background:url(../images/social_b_instar_hover.png) no-repeat;}
 #container{width:100%; height:100%; position:relative; max-width:1200px; margin:0 auto;} 
-#container .content{width:25%; height:100%; position:absolute; transition:all .5s;} 
-#container .content.this{width:100%; left:0 !important;}
-#container .content.prev{width:100%; left:-100% !important;}
-#container .content.next{width:100%; left:100% !important;}
-#container .content.this:before, #container .content.this:after, 
-#container .content.this .conbox:before{opacity:0;}
+#container .content{width:25%; height:100%; position:absolute;} 
 #container #menu1{left:0%; background:url(../images/content_bg1.png) repeat;} 
 #container #menu2{left:25%; background:url(../images/content_bg2.png) repeat;} 
 #container #menu3{left:50%; background:url(../images/content_bg3.png) repeat;} 
@@ -71,20 +66,10 @@ footer > a.instar:hover{background:url(../images/social_b_instar_hover.png) no-r
 #container #menu3 .conbox:before{background:url(../images/main_ico3.png) no-repeat; width:270px; height:310px; right:-60px; top:30px; background-size:100%;} 
 #container #menu4 .conbox:before{background:url(../images/main_ico4.png) no-repeat; width:350px; height:400px; right:-170px; top:100px; background-size:100%;}
 #container .content h2{opacity:0;}
-#container .content.this h2{height:auto; padding:30px 0px 20px 50px; color:#000;
-position:relative; background:#fff; font-size:28px; font-weight:400; opacity:1;}
-#container .content.this h2:after{content:""; width:100%; height:8px; background:#ed3140;
-position:absolute; left:0;bottom:0;}
-#container .content .conbox .content_wrap{opacity:0;}
-#container .content.this .conbox .content_wrap{padding:30px 50px 50px 50px; opacity:1;}
-#container .content{top:-100%; transition:all .8s;}
-#container .content:nth-of-type(2){transition-delay:.3s;}
-#container .content:nth-of-type(3){transition-delay:.6s;}
-#container .content:nth-of-type(4){transition-delay:.8s;}
-#container.start .content{top:0;}
 
-/*padding border이런 값은 새로고침하면서 바꾸면 되는건가?
-  그리고 네비 누를때 순차적으로 옆으로 넘어가지는 거 따로 설정안해준건데 왜 되지?*/
+
+
+
 
 
 
